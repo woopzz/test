@@ -23,3 +23,4 @@ jobs:
           branch=${raw##*/}
           echo "branch=$branch" >> $GITHUB_OUTPUT
           echo "Branch is $branch."
+          echo "ref name = $GITHUB_REF_NAME"
