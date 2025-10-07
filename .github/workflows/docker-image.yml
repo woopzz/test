@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Build the Docker image
-      - run: |
+        run: |
           # docker build . --file Dockerfile --tag my-image-name:$(date +%s)
           echo "The release version is ${{ github.event.release.tag_name }}"
 
